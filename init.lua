@@ -102,6 +102,10 @@ vim.g.have_nerd_font = true
 vim.o.number = true
 vim.o.relativenumber = true
 
+-- Set Tab to render as two spaces
+vim.o.shiftwidth = 2
+vim.o.tabstop = 2
+
 -- Enable mouse mode, can be useful for resizing splits for example!
 vim.o.mouse = 'a'
 
@@ -974,7 +978,9 @@ require('lazy').setup({
   {
     'tpope/vim-fugitive',
   },
-
+  -- {
+  --   'github/copilot.vim',
+  -- },
   -- The following comments only work if you have downloaded the kickstart repo, not just copy pasted the
   -- init.lua. If you want these files, they are in the repository, so you can just download them and
   -- place them in the correct locations.
